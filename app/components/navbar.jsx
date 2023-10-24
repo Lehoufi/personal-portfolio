@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'; 
 import { motion } from 'framer-motion';
 
-export default function navbar({activated,updatepost}) {
+export default function Navbar({activated,updatepost}) {
   const [theme,settheme]=useState('light');
 
 

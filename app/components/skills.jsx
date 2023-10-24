@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'; 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-export default function page() {
+export default function Page() {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
