@@ -14,7 +14,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        arabic: ['Tilt Neon', 'sans-serif'],
+        'sans': ['DM Sans', 'sans-serif'],
       },
       screens: {
         lg: '1400px',
