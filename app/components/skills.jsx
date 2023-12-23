@@ -38,23 +38,27 @@ export default function Page({ updatepost,primaryColor }) {
 
          <div className='fx justify-center gap-8 my-20 max-md:my-6 flex-wrap'>
   {skills.components.map((skill, index) => (
-        <Skill key={index}
+      <div key={index}>  
+       <Skill key={index}
           image={skill.src} 
           title={skill.title}
           desc={skill.description}
         />
+        </div>
       ))}
   </div>
    <div  className="flex flex-wrap gap-6 md:px-4  justify-center my-20 max-md:my-8  max-md:gap-3">
 
 {
   techno.map((t,index)=>(
+    <div key={index}> 
     <Technologies
     key={index}
     svg={t[1]} 
     name={t[0]}
     bg={t[2]} index={index}
   />
+  </div>
   ))
 }
    
