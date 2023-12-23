@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-function technologies({svg,index,name,bg}) {
+function Technologies({svg,index,name,bg}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -42,4 +42,4 @@ function technologies({svg,index,name,bg}) {
   )
 }
 
-export default technologies
+export default Technologies

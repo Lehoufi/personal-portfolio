@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-function project({title,description,href,image,className}) {
+function Project({title,description,href,image,className}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -55,4 +55,4 @@ function project({title,description,href,image,className}) {
   )
 }
 
-export default project
+export default Project

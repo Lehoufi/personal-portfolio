@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import {  motion } from 'framer-motion';
-function contact({primaryColor}) {
+function Contact({primaryColor}) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -129,4 +129,4 @@ function contact({primaryColor}) {
   )
 }
 
-export default contact
+export default Contact

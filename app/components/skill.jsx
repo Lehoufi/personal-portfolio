@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-function skill({image,title,desc,index}) {
+function Skill({image,title,desc,index}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -16,6 +16,7 @@ function skill({image,title,desc,index}) {
     }, [controls, inView]);
   return (
     <motion.div
+    key={title}
     ref={ref}
     initial={{ opacity: 0, y: 50 }}
     animate={controls}
@@ -41,4 +42,4 @@ function skill({image,title,desc,index}) {
   )
 }
 
-export default skill
+export default Skill
