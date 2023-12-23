@@ -12,7 +12,7 @@ export default function Page({ updatepost,primaryColor }) {
     if (inView) {
       updatepost('home');
     }
-  }, [inView]);
+  }, [inView, updatepost]);
 
   return (
     <motion.div initial={{ opacity: 0, y: 100 }}
