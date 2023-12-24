@@ -50,14 +50,13 @@ console.log(skills)
 
 {
   techno.map((t,index)=>(
-    <div key={index}> 
+   
     <Technologies
     key={index}
     svg={t[1]} 
     name={t[0]}
     bg={t[2]} index={index}
   />
-  </div>
   ))
 }
    
