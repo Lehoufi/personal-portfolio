@@ -36,7 +36,6 @@ export default function Home() {
   <div className="  she font-sans  lf:px-[10rem] px-9 max-md:px-3  transition-all duration-500 dark:bg-[#000000fc]">
   <Navbar activated={activated} updatepost={updatepost} primaryColor={primaryColor} setPrimaryColor={setPrimaryColor}/>
  <Homei  updatepost={updatepost} primaryColor={primaryColor} />
- <Skills updatepost={updatepost} primaryColor={primaryColor} />
  <Projects updatepost={updatepost} primaryColor={primaryColor}/>
  <Contact updatepost={updatepost} primaryColor={primaryColor}/>
  </div>
