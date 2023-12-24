@@ -21,12 +21,7 @@ export default function Page({ updatepost,primaryColor }) {
   ];
   
   
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-      updatepost('skills');
-    } 
-  }, [controls, inView,updatepost]);
+
   return (
    <div  className=' py-8 md:py-4 ' id='skills'>
         <h1 className="text-6xl max-md:text-4xl max-md:m-0 text-gray-900 dark:text-gray-200 font-bold text-center m-4 w-full max-w-[80%] max-md:max-w-[100%] mx-auto">
