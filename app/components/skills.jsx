@@ -36,23 +36,7 @@ export default function Page({ updatepost,primaryColor }) {
 </h1>
 
   
-   <div  className="flex flex-wrap gap-6 md:px-4  justify-center my-20 max-md:my-8  max-md:gap-3">
-
-{
-  techno.map((t,index)=>(
-   
-    <Technologies
-    key={index}
-    svg={t[1]} 
-    name={t[0]}
-    bg={t[2]} index={index}
-  />
-  ))
-}
-   
- 
-
-  </div>
+  
 
  
 </div>
