@@ -33,7 +33,7 @@ function Project({title,description,href,image,className}) {
     }
   }}
 
-  whileHover={{scale:1.01}} className={`card max-md:w-[25rem]  mt-12 select-none transition-all duration-100 dark:bg-[#161616cf] dark:text-gray-200 relative  cursor-pointer  `}>
+  whileHover={{scale:1.01}} className={`card max-md:w-[25rem] max-sm:w-[22rem]  mt-12 select-none transition-all duration-100 dark:bg-[#161616cf] dark:text-gray-200 relative  cursor-pointer  `}>
         
         <div className={`lisr max-md:flex-row max-lf:gap-4 gap-7 ${className}`}>
           <div className="logo text-5xl font-bold  max-md:text-3xl">{title}</div>

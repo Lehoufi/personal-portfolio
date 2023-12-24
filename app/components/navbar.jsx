@@ -31,7 +31,7 @@ export default function Navbar({ activated, updatepost, primaryColor, setPrimary
       duration: 0.5,
       ease: "easeOut",
     }}
-     className="fx sticky justify-evenly gap-5 top-0 z-40 p-2">
+     className="fx sticky justify-evenly gap-5 max-sm:gap-2 top-0 z-40 p-2">
       <div className="fx max-md:hidden justify-center px-4 transition-all duration-500   py-2 rounded-full  gap-4 text-gray-800 text-xl dark:text-gray-400 cursor-pointer   border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6   sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 ">
         <span onClick={() => handletheme('light')} className={theme === 'light' ? buttonStyles : ''}>
           Light

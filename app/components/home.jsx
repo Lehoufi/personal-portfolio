@@ -19,7 +19,7 @@ export default function Page({ updatepost,primaryColor }) {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.175 }} className='fx  justify-center max-md:mb-[-90px] max-md:mt-[-100px]' id='home'>
       <div ref={ref} className="home mt-[100px] text-gray-900 dark:text-gray-200">
-        <div  className='text-6xl max-md:text-4xl font-black text-center'>
+        <div  className='text-6xl max-md:text-5xl font-black text-center'>
           <p >hello .🌍 , I&apos;m <span style={{ color: primaryColor }} className='transition-all duration-400'>Lehoufi</span></p>
         </div>
         <div className="fx gap-2 text-[#5e5e63] dark:text-[#d1d1d1]  ">
@@ -27,7 +27,7 @@ export default function Page({ updatepost,primaryColor }) {
 
           <p className='text-xl font-bold max-md:text-lg  text-[#5e5e63] dark:text-[#d1d1d1]  '>Morocco</p>
         </div>
-        <p className='font-bold max-w-[90%] max-md:max-w[99%] max-md:max-w-full md:max-w-[600px] text-center leading-loose text-[#5e5e63] dark:text-[#d1d1d1]  '>
+        <p className='font-bold max-w-[90%] max-md:max-w[99%] max-sm:text-base max-md:max-w-full md:max-w-[600px] text-center leading-loose text-[#5e5e63] dark:text-[#d1d1d1]  '>
           I&apos;m a student with a diploma in Information System Development, and my ambition lies in the realm of web design. I&apos;m passionate about creating visually appealing and user-friendly websites, and I&apos;m excited to explore the creative possibilities in this field 
         </p>
       </div>
