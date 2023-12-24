@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-function Skill({image,title,desc,index}) {
+function Skill({image,title,desc,key}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -16,7 +16,7 @@ function Skill({image,title,desc,index}) {
     }, [controls, inView]);
   return (
     <motion.div
-    key={title}
+    key={key}
     ref={ref}
     initial={{ opacity: 0, y: 50 }}
     animate={controls}

@@ -8,7 +8,7 @@ import Technologies from './technologies';
 export default function Page({ updatepost,primaryColor }) {
   const [ref, inView] = useInView();
   const controls = useAnimation();
-
+console.log(skills)
   const techno = [
     ["Nextjs", <svg className='max-md:w-8 w-10' viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z" fill="#ffffff"></path> </g></svg>, "bg-black"],
     ["Html",   <svg viewBox="0 0 32 32" className='w-12' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>, "bg-[#f77f00]"],
@@ -37,13 +37,12 @@ export default function Page({ updatepost,primaryColor }) {
 </h1>
 
          <div className='fx justify-center gap-8 my-20 max-md:my-6 flex-wrap'>
-         {skills.map((skill, index) => (
+         {skills.components.map((skill, index) => (
   <Skill
-    key={skill.id} // or any unique property of 'skill'
-    image={skill.image}
+    key={skill.id} 
+    image={skill.src}
     title={skill.title}
-    desc={skill.desc}
-    index={index}
+    desc={skill.description}
   />
 ))}
   </div>
