@@ -2,7 +2,6 @@
 import { useEffect,useState } from "react"
 import Navbar from "./components/navbar"
 import Homei from "./components/home"
-import Skills from "./components/skills"
 import Projects from './components/projects'
 import Contact from "./components/contact"
 import Footer from "./components/footer"
