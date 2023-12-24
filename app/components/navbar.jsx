@@ -12,6 +12,15 @@ export default function Navbar({ activated, updatepost, primaryColor, setPrimary
   };
 
   useEffect(() => {
+    const preferredTheme = localStorage.getItem('theme');
+    if (preferredTheme) {
+      settheme(preferredTheme);
+    } else {
+      const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      settheme(userPrefersDark ? 'dark' : 'light');
+    }
+  }, []);
+  useEffect(() => {
     const html = document.documentElement;
 
     if (theme === 'dark') {
