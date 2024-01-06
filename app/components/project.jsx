@@ -35,13 +35,13 @@ function Project({title,description,href,image,className}) {
 
   whileHover={{scale:1.01}} className={`card max-md:w-[25rem] max-sm:w-[22rem]  mt-12 select-none transition-all duration-100 dark:bg-[#161616cf] dark:text-gray-200 relative  cursor-pointer  `}>
         
-        <div className={`lisr max-md:flex-row max-lf:gap-4 gap-7 ${className}`}>
+        <div className={`lisr max-md:flex-row max-lf:gap-4 gap-7  ${className}`}>
           <div className="logo text-5xl font-bold  max-md:text-3xl">{title}</div>
         
           <p  className="text-xl max-lf:hidden">
            {description}
           </p>
-          <Link href={href} target='_blank' className="fx justify-start dark:bg-[#000000fc] dark:text-white gap-2 bg-white p-4 px-5 rounded-xl diva">
+          <Link  href={href} target='_blank' className={`fx justify-start dark:bg-[#000000fc] dark:text-white gap-2 bg-white p-4 px-5 rounded-xl diva  ${className}`}>
             <p   className="font-bold  max-md:text-lg">Visit website</p>
             <svg fill="currentColor" className="w-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path

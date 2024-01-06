@@ -15,9 +15,10 @@ export default function Page({ updatepost,primaryColor }) {
   }, [inView, updatepost]);
 
   const projects=[
-                  ['Keyrae','KEYRAE is a platform for publishing offers for selling and renting homes and shops, facilitating communication between people interested in the offers','https://www.keyrae.online/','/keyrae2.png'],
+    ['Perfumes','Elegance meets innovation in our lifestyle brand, offering authentic perfumes sourced directly from authorized distributors for the highest quality.','https://perfume-ruby.vercel.app/','/perfume.png'],             
+    ['Keyrae','KEYRAE is a platform for publishing offers for selling and renting homes and shops, facilitating communication between people interested in the offers','https://www.keyrae.online/','/keyrae2.png'],
                   ['Ip Tv','website presents a comprehensive showcase of our premium streaming services, offering clients a detailed insight into our diverse range of IPTV packages, with clear pricing structures and an array of channel options','https://hamza-cast.000webhostapp.com/','/hamza.png'],
-                  ['Keyrae Mobile','KEYRAE is a platform for publishing offers for selling and renting homes and shops, facilitating communication between people interested in the offers','https://www.keyrae.online/','/mob.png']
+                  ['Keyrae Mobile','KEYRAE is a platform for publishing offers for selling and renting homes and shops, facilitating communication between people interested in the offers','#','/mob.png'],
                 ]
   const previews = ['/keyrae2.png', '/hamza.png', '/mob.png'];
 
@@ -35,7 +36,7 @@ export default function Page({ updatepost,primaryColor }) {
       description={projet[1]}
       href={projet[2]}
       image={projet[3]}
-      className={projet[0]=='Keyrae Mobile' ? 'cursor-not-allowed' : ''}
+      className={projet[0]=='Keyrae Mobile' ? 'cursor-not-allowed' : 'cursor-pointer'}
     />
   ))
 }
