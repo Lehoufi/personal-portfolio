@@ -15,10 +15,10 @@ export default function Page({ updatepost,primaryColor }) {
   }, [inView, updatepost]);
 
   return (
-    <motion.div initial={{ opacity: 0, y: 100 }}
+    <motion.div ref={ref} initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.175 }} className='fx  justify-center max-md:mb-[-90px] max-md:mt-[-100px]' id='home'>
-      <div ref={ref} className="home mt-[100px] text-gray-900 dark:text-gray-200">
+      <div  className="home mt-[100px] text-gray-900 dark:text-gray-200">
         <div  className='text-7xl max-md:text-5xl font-black text-center'>
           <p >hello .🌍 , I&apos;m <span style={{ color: primaryColor }} className='transition-all duration-400'>Lehoufi</span></p>
         </div>

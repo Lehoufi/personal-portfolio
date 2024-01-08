@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "framer-motion": "^10.16.4",
     "fslightbox-react": "^1.7.6",
     "next": "13.5.5",
