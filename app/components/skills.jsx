@@ -16,14 +16,14 @@ export default function Page({ updatepost,primaryColor }) {
     } 
   }, [controls, inView,updatepost]);
   return (
-   <div  className=' py-8 md:py-4 ' id='skills'>
-        <h1 className="text-6xl max-md:text-4xl max-md:m-0 text-gray-900 dark:text-gray-200 font-bold text-center m-4 w-full max-w-[80%] max-md:max-w-[100%] mx-auto">
+   <div   className=' py-8 md:py-4 ' id='skills'>
+        <h1  className="text-6xl max-md:text-4xl max-md:m-0 text-gray-900 dark:text-gray-200 font-bold text-center m-4 w-full max-w-[80%] max-md:max-w-[100%] mx-auto">
   Shape your <span className='transition-all duration-400' style={{ color: primaryColor }}>design</span>, shape your business
   <span style={{ color: primaryColor }}>destiny</span>
 .
 </h1>
 
-<div className='fx justify-center gap-8 my-20 max-md:my-6 flex-wrap'>
+<div ref={ref} className='fx justify-center gap-8 my-20 max-md:my-6 flex-wrap'>
   {skills && skills.components && skills.components.map((skill, index) => (
         <Skill key={index}
           image={skill.src} 

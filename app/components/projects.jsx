@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
 import Project from './project';
 export default function Page({ updatepost,primaryColor }) {
   const [ref, inView] = useInView();
@@ -24,9 +22,10 @@ export default function Page({ updatepost,primaryColor }) {
 
   return (
     <motion.section
+   
       className="fx flex-col items-center justify-center my-9 max-md:my-4"  
     >
-      <h1 className={ `text-6xl text-center mt-10 font-semibold  transition-all duration-400 `} style={{ color: primaryColor }} id="project"> projects</h1>
+      <h1  ref={ref} className={ `text-6xl text-center mt-10 font-semibold  transition-all duration-400 `} style={{ color: primaryColor }} id="project"> projects</h1>
   
       {
   projects.map((projet,index) => (

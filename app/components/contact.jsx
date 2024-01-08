@@ -3,7 +3,7 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion'
-function Contact({primaryColor}) {
+function Contact({updatepost,primaryColor}) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -23,8 +23,9 @@ function Contact({primaryColor}) {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+      updatepost('contact')
     } 
-  }, [controls, inView]);
+  }, [controls, inView,updatepost]);
       return (
         <>
       {
